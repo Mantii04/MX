@@ -1,349 +1,349 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MX</string>
-    <string name="close_fullscreen_content_desc">关闭</string>
+    <string name="close_fullscreen_content_desc">Close</string>
     <string name="floating_icon_content_desc">Yuzusoft</string>
 
-    <!-- 设置界面 -->
-    <string name="settings_title">设置</string>
+    <!-- Settings Interface -->
+    <string name="settings_title">Settings</string>
 
-    <!-- 快速操作 -->
-    <string name="settings_quick_actions">快速操作</string>
-    <string name="settings_select_process">选择调试进程</string>
-    <string name="settings_no_process_selected">未选择进程</string>
-    <string name="settings_terminate_proc">终止进程</string>
-    <string name="settings_exit">退出悬浮窗</string>
+    <!-- Quick Actions -->
+    <string name="settings_quick_actions">Quick Actions</string>
+    <string name="settings_select_process">Select Debug Process</string>
+    <string name="settings_no_process_selected">No Process Selected</string>
+    <string name="settings_terminate_proc">Terminate Process</string>
+    <string name="settings_exit">Exit Overlay</string>
 
-    <!-- 进程设置 -->
-    <string name="settings_process_settings">进程设置</string>
-    <string name="settings_memory_range">选择内存范围</string>
-    <string name="settings_memory_range_summary">点击选择要搜索的内存区域</string>
-    <string name="settings_hide_mamu">对进程隐藏Mamu</string>
-    <string name="settings_hide_mode_1">隐藏模式 1</string>
-    <string name="settings_hide_mode_2">隐藏模式 2</string>
-    <string name="settings_hide_mode_3">隐藏模式 3</string>
-    <string name="settings_hide_mode_4">隐藏模式 4</string>
-    <string name="settings_skip_memory">跳过内存区域</string>
-    <string name="settings_skip_memory_none">否</string>
-    <string name="settings_skip_memory_empty">空</string>
-    <string name="settings_skip_memory_empty_zygote">空 or Zygote</string>
-    <string name="settings_auto_pause">打开悬浮窗自动暂停进程</string>
-    <string name="settings_freeze_interval">冻结间隔</string>
+    <!-- Process Settings -->
+    <string name="settings_process_settings">Process Settings</string>
+    <string name="settings_memory_range">Select Memory Range</string>
+    <string name="settings_memory_range_summary">Tap to select memory regions to search</string>
+    <string name="settings_hide_mamu">Hide Mamu from Process</string>
+    <string name="settings_hide_mode_1">Hide Mode 1</string>
+    <string name="settings_hide_mode_2">Hide Mode 2</string>
+    <string name="settings_hide_mode_3">Hide Mode 3</string>
+    <string name="settings_hide_mode_4">Hide Mode 4</string>
+    <string name="settings_skip_memory">Skip Memory Regions</string>
+    <string name="settings_skip_memory_none">No</string>
+    <string name="settings_skip_memory_empty">Empty</string>
+    <string name="settings_skip_memory_empty_zygote">Empty or Zygote</string>
+    <string name="settings_auto_pause">Auto Pause Process when Overlay Opens</string>
+    <string name="settings_freeze_interval">Freeze Interval</string>
 
-    <!-- 搜索设置 -->
-    <string name="settings_search_settings">搜索设置</string>
-    <string name="settings_chunk_size">搜索分块大小</string>
-    <string name="settings_chunk_size_summary">每次搜索读取的内存块大小</string>
+    <!-- Search Settings -->
+    <string name="settings_search_settings">Search Settings</string>
+    <string name="settings_chunk_size">Search Chunk Size</string>
+    <string name="settings_chunk_size_summary">Size of the memory chunk read per search iteration</string>
     <string name="chunk_size_128_kb">128 KB</string>
     <string name="chunk_size_512_kb">512 KB</string>
     <string name="chunk_size_1_mb">1 MB</string>
     <string name="chunk_size_4_mb">4 MB</string>
-    <string name="settings_rude_search">简约搜索模式</string>
-    <string name="settings_rude_search_summary">跳过可能的空洞页（更快但可能漏数据）</string>
-    <string name="settings_failed_page_threshold">连续失败页阈值</string>
-    <string name="settings_failed_page_threshold_summary">达到阈值后跳过整个256KB段</string>
+    <string name="settings_rude_search">Rude Search Mode</string>
+    <string name="settings_rude_search_summary">Skip potential hole pages (Faster, but may miss data)</string>
+    <string name="settings_failed_page_threshold">Consecutive Failed Page Threshold</string>
+    <string name="settings_failed_page_threshold_summary">Skip the entire 256KB segment after reaching the threshold</string>
 
-    <!-- 通用设置 -->
-    <string name="settings_general_settings">通用设置</string>
-    <string name="settings_filter_system_process">过滤系统进程</string>
-    <string name="settings_filter_linux_process">过滤Linux进程</string>
-    <string name="settings_list_update_interval">保存列表更新间隔</string>
-    <string name="settings_memory_rw_mode">内存读写模式</string>
-    <string name="settings_memory_rw_mode_none">无</string>
-    <string name="settings_memory_rw_mode_writethrough">透写 (慢)</string>
-    <string name="settings_memory_rw_mode_nocache">无缓 (慢)</string>
-    <string name="settings_memory_rw_mode_normal">普通 (慢)</string>
-    <string name="settings_memory_rw_mode_pgfault">缺页访问（较快）</string>
-    <string name="settings_opacity">透明度</string>
-    <string name="settings_memory_buffer_size">内存缓冲区大小</string>
-    <string name="settings_memory_buffer_size_summary">搜索结果内存缓冲区（修改后需重启应用）</string>
-    <string name="settings_dialog_transparency">Dialog透明度</string>
-    <string name="settings_dialog_transparency_summary">关闭后Dialog将完全不透明</string>
-    <string name="settings_compatibility_mode">兼容模式</string>
-    <string name="settings_compatibility_mode_summary">启用后所有搜索结果以模糊格式存储，支持精确/模糊搜索无缝切换</string>
-    <string name="settings_top_most_layer">最高层级绘制</string>
-    <string name="settings_top_most_layer_summary">启用后悬浮窗显示在所有应用之上（易暴毙）</string>
+    <!-- General Settings -->
+    <string name="settings_general_settings">General Settings</string>
+    <string name="settings_filter_system_process">Filter System Processes</string>
+    <string name="settings_filter_linux_process">Filter Linux Processes</string>
+    <string name="settings_list_update_interval">Saved List Update Interval</string>
+    <string name="settings_memory_rw_mode">Memory R/W Mode</string>
+    <string name="settings_memory_rw_mode_none">None</string>
+    <string name="settings_memory_rw_mode_writethrough">Write-Through (Slow)</string>
+    <string name="settings_memory_rw_mode_nocache">No-Cache (Slow)</string>
+    <string name="settings_memory_rw_mode_normal">Normal (Slow)</string>
+    <string name="settings_memory_rw_mode_pgfault">Page Fault Access (Faster)</string>
+    <string name="settings_opacity">Opacity</string>
+    <string name="settings_memory_buffer_size">Memory Buffer Size</string>
+    <string name="settings_memory_buffer_size_summary">Search results memory buffer (Requires app restart after modification)</string>
+    <string name="settings_dialog_transparency">Dialog Transparency</string>
+    <string name="settings_dialog_transparency_summary">When disabled, dialogs will be completely opaque</string>
+    <string name="settings_compatibility_mode">Compatibility Mode</string>
+    <string name="settings_compatibility_mode_summary">When enabled, all search results are stored in fuzzy format, supporting seamless switching between precise/fuzzy search</string>
+    <string name="settings_top_most_layer">Highest Layer Rendering</string>
+    <string name="settings_top_most_layer_summary">When enabled, the overlay window displays above all applications (Prone to crashing)</string>
 
-    <!-- 界面设置 -->
-    <string name="settings_ui_settings">界面设置</string>
-    <string name="settings_keyboard">键盘</string>
-    <string name="settings_keyboard_builtin">内置</string>
-    <string name="settings_keyboard_system">系统输入法</string>
-    <string name="settings_language">语言</string>
-    <string name="settings_language_zh_cn">简体中文</string>
+    <!-- UI Settings -->
+    <string name="settings_ui_settings">UI Settings</string>
+    <string name="settings_keyboard">Keyboard</string>
+    <string name="settings_keyboard_builtin">Built-in</string>
+    <string name="settings_keyboard_system">System IME</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_zh_cn">简体中文 (Simplified Chinese)</string>
     <string name="settings_language_en">English</string>
-    <string name="settings_memory_preview_infinite_scroll">内存预览无限滚动</string>
-    <string name="settings_memory_preview_infinite_scroll_summary">关闭后只显示一页内存（基址到基址+页大小）</string>
-    <string name="success_infinite_scroll_enabled">已启用无限滚动，重新跳转地址后生效</string>
-    <string name="success_infinite_scroll_disabled">已关闭无限滚动，重新跳转地址后生效</string>
+    <string name="settings_memory_preview_infinite_scroll">Memory Preview Infinite Scroll</string>
+    <string name="settings_memory_preview_infinite_scroll_summary">When disabled, only one page of memory is displayed (Base address to Base address + Page size)</string>
+    <string name="success_infinite_scroll_enabled">Infinite scroll enabled. Takes effect after navigating to an address again.</string>
+    <string name="success_infinite_scroll_disabled">Infinite scroll disabled. Takes effect after navigating to an address again.</string>
 
-    <!-- Dialog相关 -->
-    <string name="dialog_select_operator">选择操作符</string>
-    <string name="dialog_select_memory_range">选择内存范围</string>
-    <string name="dialog_skip_memory_title">跳过内存区域</string>
+    <!-- Dialog Related -->
+    <string name="dialog_select_operator">Select Operator</string>
+    <string name="dialog_select_memory_range">Select Memory Range</string>
+    <string name="dialog_skip_memory_title">Skip Memory Regions</string>
 
-    <!-- 内存范围选项 -->
-    <string name="memory_empty_region">空区域</string>
-    <string name="memory_range_unselected">未选择内存范围</string>
-    <string name="memory_range_count">已选择 %d 个范围</string>
+    <!-- Memory Range Options -->
+    <string name="memory_empty_region">Empty Region</string>
+    <string name="memory_range_unselected">No memory range selected</string>
+    <string name="memory_range_count">%d ranges selected</string>
 
-    <!-- 成功消息 -->
-    <string name="success_process_terminated">进程已终止</string>
-    <string name="success_process_selected">已选择进程: %s</string>
-    <string name="success_memory_range_saved">内存范围已保存</string>
-    <string name="success_skip_memory_saved">跳过内存设置已保存</string>
-    <string name="success_memory_rw_mode_saved">内存读写模式已保存</string>
-    <string name="success_memory_buffer_size_saved">内存缓冲区大小已保存，需重启应用生效</string>
-    <string name="success_keyboard_saved">键盘设置已保存</string>
-    <string name="success_language_saved">语言设置已保存</string>
-    <string name="success_chunk_size_saved">搜索分块大小已保存</string>
-    <string name="success_compatibility_mode_enabled">兼容模式已启用</string>
-    <string name="success_compatibility_mode_disabled">兼容模式已关闭</string>
-    <string name="success_topmost_changed">最高层级绘制已%s，需重启悬浮窗生效</string>
-    <string name="topmost_enabled">启用</string>
-    <string name="topmost_disabled">关闭</string>
-    <string name="success_search_complete">找到 %1$d 个结果，耗时 %2$s</string>
-    <string name="search_cancelled">搜索已取消</string>
-    <string name="error_search_failed_unknown" translatable="false">搜索结果获取失败</string>
+    <!-- Success Messages -->
+    <string name="success_process_terminated">Process terminated</string>
+    <string name="success_process_selected">Selected process: %s</string>
+    <string name="success_memory_range_saved">Memory range saved</string>
+    <string name="success_skip_memory_saved">Skip memory settings saved</string>
+    <string name="success_memory_rw_mode_saved">Memory R/W mode saved</string>
+    <string name="success_memory_buffer_size_saved">Memory buffer size saved. Restart app to take effect.</string>
+    <string name="success_keyboard_saved">Keyboard settings saved</string>
+    <string name="success_language_saved">Language settings saved</string>
+    <string name="success_chunk_size_saved">Search chunk size saved</string>
+    <string name="success_compatibility_mode_enabled">Compatibility mode enabled</string>
+    <string name="success_compatibility_mode_disabled">Compatibility mode disabled</string>
+    <string name="success_topmost_changed">Highest layer rendering has been %s. Restart overlay to take effect.</string>
+    <string name="topmost_enabled">enabled</string>
+    <string name="topmost_disabled">disabled</string>
+    <string name="success_search_complete">Found %1$d results, took %2$s</string>
+    <string name="search_cancelled">Search cancelled</string>
+    <string name="error_search_failed_unknown" translatable="false">Failed to retrieve search results</string>
 
-    <!-- 错误消息 -->
-    <string name="error_topmost_fallback">最高层级模式不可用，已回退到普通模式</string>
-    <string name="error_process_died">进程已死亡 (PID: %d)</string>
-    <string name="error_terminate_failed">终止进程失败</string>
-    <string name="error_no_bound_process">当前无已绑定进程</string>
-    <string name="error_bind_process_failed">绑定进程失败</string>
-    <string name="error_bind_process_failed_with_reason">绑定进程失败: %s</string>
-    <string name="error_empty_search_value">请输入搜索值</string>
+    <!-- Error Messages -->
+    <string name="error_topmost_fallback">Highest layer mode unavailable, fell back to normal mode</string>
+    <string name="error_process_died">Process has terminated (PID: %d)</string>
+    <string name="error_terminate_failed">Failed to terminate process</string>
+    <string name="error_no_bound_process">No currently bound process</string>
+    <string name="error_bind_process_failed">Failed to bind process</string>
+    <string name="error_bind_process_failed_with_reason">Failed to bind process: %s</string>
+    <string name="error_empty_search_value">Please enter a search value</string>
 
-    <!-- 功能占位提示 -->
-    <string name="feature_convert_base_todo">进制转换功能待实现</string>
-    <string name="feature_select_memory_range_todo">选择内存范围功能待实现</string>
-    <string name="feature_history_todo">历史记录功能待实现</string>
+    <!-- Placeholder/TODO Warnings -->
+    <string name="feature_convert_base_todo">Radix conversion feature is pending implementation</string>
+    <string name="feature_select_memory_range_todo">Select memory range feature is pending implementation</string>
+    <string name="feature_history_todo">History logs feature is pending implementation</string>
 
-    <!-- 通用UI -->
+    <!-- Universal UI -->
     <string name="placeholder_process_name">Process Name</string>
     <string name="placeholder_pid">[1234]</string>
     <string name="placeholder_architecture">[x64]</string>
     <string name="placeholder_memory_size">[512 MB]</string>
-    <string name="button_cancel">取消</string>
-    <string name="button_confirm">确定</string>
-    <string name="content_desc_menu">菜单项</string>
-    <string name="content_desc_close">关闭</string>
-    <string name="content_desc_delete">删除</string>
-    <string name="content_desc_refresh">刷新</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="content_desc_menu">Menu Item</string>
+    <string name="content_desc_close">Close</string>
+    <string name="content_desc_delete">Delete</string>
+    <string name="content_desc_refresh">Refresh</string>
 
-    <!-- Tab标签 -->
-    <string name="tab_settings">设置</string>
-    <string name="tab_search">搜索</string>
-    <string name="tab_saved_addresses">保存的地址</string>
-    <string name="tab_memory_preview">内存预览</string>
-    <string name="tab_breakpoints">断点</string>
+    <!-- Tabs -->
+    <string name="tab_settings">Settings</string>
+    <string name="tab_search">Search</string>
+    <string name="tab_saved_addresses">Saved Addresses</string>
+    <string name="tab_memory_preview">Memory Preview</string>
+    <string name="tab_breakpoints">Breakpoints</string>
 
-    <!-- 指针扫描 Dialog -->
-    <string name="pointer_scan_dialog_title">指针扫描</string>
-    <string name="pointer_scan_dialog_subtitle">输入目标地址以查找指向该地址的指针链</string>
-    <string name="label_target_address">目标地址:</string>
-    <string name="hint_target_address">输入16进制地址</string>
-    <string name="error_invalid_address">无效的地址格式</string>
-    <string name="error_process_not_bound">请先绑定进程</string>
-    <string name="error_no_memory_regions">无法获取内存区域</string>
-    <string name="success_pointer_scan_started">指针扫描已启动</string>
-    <string name="success_pointer_scan_complete">找到 %d 个指针</string>
-    <string name="warning_pointer_scan_cancelled">指针扫描已取消</string>
-    <string name="error_pointer_scan_failed">扫描失败: %s</string>
-    <string name="label_value_encrypted">此值是否被加密</string>
-    <string name="label_deep_search">深度搜索 (慢)</string>
-    <string name="label_value_allow_pagefault">深度访问（缺页）</string>
-    <string name="label_value_freeze">冻结</string>
-    <string name="label_search_all_memory">在全部内存中</string>
-    <string name="button_new_search">新搜索</string>
-    <string name="button_search">搜索</string>
-    <string name="button_refine">改善</string>
+    <!-- Pointer Scan Dialog -->
+    <string name="pointer_scan_dialog_title">Pointer Scan</string>
+    <string name="pointer_scan_dialog_subtitle">Enter target address to find pointer chains pointing to it</string>
+    <string name="label_target_address">Target Address:</string>
+    <string name="hint_target_address">Enter HEX address</string>
+    <string name="error_invalid_address">Invalid address format</string>
+    <string name="error_process_not_bound">Please bind a process first</string>
+    <string name="error_no_memory_regions">Unable to retrieve memory regions</string>
+    <string name="success_pointer_scan_started">Pointer scan started</string>
+    <string name="success_pointer_scan_complete">Found %d pointers</string>
+    <string name="warning_pointer_scan_cancelled">Pointer scan cancelled</string>
+    <string name="error_pointer_scan_failed">Scan failed: %s</string>
+    <string name="label_value_encrypted">Is this value encrypted</string>
+    <string name="label_deep_search">Deep Search (Slow)</string>
+    <string name="label_value_allow_pagefault">Deep Access (Page Fault)</string>
+    <string name="label_value_freeze">Freeze</string>
+    <string name="label_search_all_memory">In All Memory</string>
+    <string name="button_new_search">New Search</string>
+    <string name="button_search">Search</string>
+    <string name="button_refine">Refine</string>
     <string name="description_auto_type" tools:ignore="TypographyDashes">A: Auto (–1.8e+308 - 1.8e+308)</string>
-    <string name="label_type">类型：</string>
-    <string name="content_desc_convert_hex">转换进制</string>
+    <string name="label_type">Type:</string>
+    <string name="content_desc_convert_hex">Convert Base</string>
     <string name="symbol_equals">=</string>
-    <string name="label_value">值:</string>
-    <string name="search_dialog_title">输入要搜索的值</string>
-    <string name="search_dialog_subtitle">输入从-1.8e+308到1.8e+308的值</string>
+    <string name="label_value">Value:</string>
+    <string name="search_dialog_title">Enter value to search</string>
+    <string name="search_dialog_subtitle">Enter a value from -1.8e+308 to 1.8e+308</string>
     <string name="memory_buffer_size_512_mb">512 MB</string>
 
-    <!-- 删除对话框 -->
-    <string name="dialog_remove_title">移除选项</string>
-    <string name="option_remove_all">移除全部</string>
-    <string name="option_restore_and_remove">恢复并移除</string>
-    <string name="option_remove_selected">移除</string>
-    <string name="label_remove">移除</string>
+    <!-- Remove Dialog -->
+    <string name="dialog_remove_title">Remove Option</string>
+    <string name="option_remove_all">Remove All</string>
+    <string name="option_restore_and_remove">Restore and Remove</string>
+    <string name="option_remove_selected">Remove Selected</string>
+    <string name="label_remove">Remove</string>
 
-    <!-- 过滤对话框 -->
-    <string name="dialog_filter_title">过滤配置</string>
-    <string name="label_max_display_count">单页最大显示</string>
-    <string name="label_address_range_filter">地址范围过滤</string>
-    <string name="label_address_start">起始</string>
-    <string name="label_address_end">结束</string>
-    <string name="label_value_range_filter">值范围过滤</string>
-    <string name="label_value_min">最小值</string>
-    <string name="label_value_max">最大值</string>
-    <string name="label_data_type_filter">数据类型过滤</string>
-    <string name="button_select_data_types">选择数据类型</string>
-    <string name="label_permission_filter">权限过滤</string>
-    <string name="button_select_permissions">选择权限</string>
-    <string name="button_reset">重置</string>
-    <string name="button_apply">应用</string>
+    <!-- Filter Dialog -->
+    <string name="dialog_filter_title">Filter Configuration</string>
+    <string name="label_max_display_count">Max Display per Page</string>
+    <string name="label_address_range_filter">Address Range Filter</string>
+    <string name="label_address_start">Start</string>
+    <string name="label_address_end">End</string>
+    <string name="label_value_range_filter">Value Range Filter</string>
+    <string name="label_value_min">Min</string>
+    <string name="label_value_max">Max</string>
+    <string name="label_data_type_filter">Data Type Filter</string>
+    <string name="button_select_data_types">Select Data Types</string>
+    <string name="label_permission_filter">Permission Filter</string>
+    <string name="button_select_permissions">Select Permissions</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_apply">Apply</string>
     <string name="default_page_size">100</string>
     <string name="hint_address_start">00000000</string>
     <string name="hint_address_end">FFFFFFFF</string>
 
-    <!-- 模糊搜索对话框 -->
-    <string name="fuzzy_search_dialog_title">模糊搜索</string>
-    <string name="fuzzy_search_initial_title">初始扫描</string>
-    <string name="fuzzy_search_refine_title">细化搜索</string>
-    <string name="fuzzy_search_initial_subtitle">记录指定类型的所有值，为后续细化做准备</string>
-    <string name="fuzzy_search_refine_subtitle">根据条件过滤上次搜索结果</string>
-    <string name="fuzzy_search_select_condition">选择搜索条件</string>
-    <string name="fuzzy_search_select_type">选择数据类型</string>
-    <string name="fuzzy_search_param1">参数1</string>
-    <string name="fuzzy_search_param2">参数2</string>
-    <string name="fuzzy_search_param1_hint">输入数值</string>
-    <string name="fuzzy_search_param2_hint">输入数值</string>
-    <string name="fuzzy_search_range_hint">范围：%1$s ~ %2$s</string>
-    <string name="fuzzy_search_percent_hint">百分比：0~100</string>
-    <string name="fuzzy_search_button_start">开始扫描</string>
-    <string name="fuzzy_search_button_refine">细化</string>
-    <string name="fuzzy_search_no_results">请先进行初始扫描</string>
-    <string name="fuzzy_search_current_results">当前结果：%d 个</string>
-    <string name="hint_value_min">最小值</string>
-    <string name="hint_value_max">最大值</string>
+    <!-- Fuzzy Search Dialog -->
+    <string name="fuzzy_search_dialog_title">Fuzzy Search</string>
+    <string name="fuzzy_search_initial_title">Initial Scan</string>
+    <string name="fuzzy_search_refine_title">Refine Search</string>
+    <string name="fuzzy_search_initial_subtitle">Record all values of specified type to prepare for refinement</string>
+    <string name="fuzzy_search_refine_subtitle">Filter previous search results based on conditions</string>
+    <string name="fuzzy_search_select_condition">Select Search Condition</string>
+    <string name="fuzzy_search_select_type">Select Data Type</string>
+    <string name="fuzzy_search_param1">Param 1</string>
+    <string name="fuzzy_search_param2">Param 2</string>
+    <string name="fuzzy_search_param1_hint">Enter numerical value</string>
+    <string name="fuzzy_search_param2_hint">Enter numerical value</string>
+    <string name="fuzzy_search_range_hint">Range: %1$s ~ %2$s</string>
+    <string name="fuzzy_search_percent_hint">Percentage: 0~100</string>
+    <string name="fuzzy_search_button_start">Start Scan</string>
+    <string name="fuzzy_search_button_refine">Refine</string>
+    <string name="fuzzy_search_no_results">Please perform an initial scan first</string>
+    <string name="fuzzy_search_current_results">Current results: %d</string>
+    <string name="hint_value_min">Min value</string>
+    <string name="hint_value_max">Max value</string>
 
-    <!-- 修改值对话框 -->
-    <string name="modify_dialog_title">修改值</string>
-    <string name="modify_dialog_subtitle">输入新的值</string>
-    <string name="button_goto">转到</string>
-    <string name="button_no">否</string>
-    <string name="button_yes">是</string>
-    <string name="button_copy">复制</string>
-    <string name="modify_success_message">地址 %s 修改成功</string>
-    <string name="modify_failed_message">地址 %s 修改失败</string>
-    <string name="error_invalid_value_format">输入值格式错误: %s</string>
-    <string name="error_modify_failed">修改失败: %s</string>
+    <!-- Modify Value Dialog -->
+    <string name="modify_dialog_title">Modify Value</string>
+    <string name="modify_dialog_subtitle">Enter new value</string>
+    <string name="button_goto">Go To</string>
+    <string name="button_no">No</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_copy">Copy</string>
+    <string name="modify_success_message">Address %s modified successfully</string>
+    <string name="modify_failed_message">Failed to modify address %s</string>
+    <string name="error_invalid_value_format">Invalid value format input: %s</string>
+    <string name="error_modify_failed">Modification failed: %s</string>
 
-    <!-- 权限设置界面 -->
-    <string name="permission_setup_initializing">初始化中...</string>
-    <string name="permission_setup_checking_root">检查Root权限...</string>
-    <string name="permission_setup_root_check_hint">请在弹出的授权窗口中允许Root访问</string>
-    <string name="permission_setup_no_root_title">未获取Root权限</string>
-    <string name="permission_setup_no_root_message">此应用需要Root权限才能正常运行。\n请确保您的设备已Root，并在授权管理器中允许访问。</string>
-    <string name="permission_setup_root_granted_title">Root权限已获取</string>
-    <string name="permission_setup_root_confirm_message">是否允许使用Root权限自动授予应用所需的系统权限？</string>
-    <string name="permission_setup_permissions_list">包括：查询所有应用包名、悬浮窗权限等</string>
-    <string name="permission_setup_granting_title">正在授予权限</string>
+    <!-- Permission Setup Screen -->
+    <string name="permission_setup_initializing">Initializing...</string>
+    <string name="permission_setup_checking_root">Checking Root Access...</string>
+    <string name="permission_setup_root_check_hint">Please allow Root access in the pop-up authorization prompt</string>
+    <string name="permission_setup_no_root_title">Root Access Not Found</string>
+    <string name="permission_setup_no_root_message">This application requires Root permissions to operate correctly.\nPlease ensure your device is rooted and allow access in your superuser manager.</string>
+    <string name="permission_setup_root_granted_title">Root Access Granted</string>
+    <string name="permission_setup_root_confirm_message">Allow the app to use Root privilege to automatically grant required system permissions?</string>
+    <string name="permission_setup_permissions_list">Includes: querying all app package names, system overlay permissions, etc.</string>
+    <string name="permission_setup_granting_title">Granting Permissions</string>
     <string name="permission_setup_granting_progress">%1$d / %2$d</string>
-    <string name="permission_setup_current_permission">当前权限：</string>
-    <string name="permission_setup_completed_all">权限授予完成</string>
-    <string name="permission_setup_completed_partial">部分权限授予成功</string>
-    <string name="permission_setup_granted_count">已授予 %1$d / %2$d 项权限</string>
-    <string name="permission_setup_launching">正在启动主界面…</string>
-    <string name="permission_setup_error_title">发生错误</string>
-    <string name="button_retry">重试</string>
-    <string name="button_skip">跳过</string>
-    <string name="button_allow">允许</string>
+    <string name="permission_setup_current_permission">Current Permission: </string>
+    <string name="permission_setup_completed_all">All permissions successfully granted</string>
+    <string name="permission_setup_completed_partial">Some permissions successfully granted</string>
+    <string name="permission_setup_granted_count">Granted %1$d / %2$d permissions</string>
+    <string name="permission_setup_launching">Launching main interface…</string>
+    <string name="permission_setup_error_title">An Error Occurred</string>
+    <string name="button_retry">Retry</string>
+    <string name="button_skip">Skip</string>
+    <string name="button_allow">Allow</string>
 
-    <!-- 前台服务通知 -->
-    <string name="notification_channel_name">悬浮窗服务</string>
-    <string name="notification_channel_description">保持悬浮窗服务在后台运行</string>
-    <string name="notification_title">Mamu悬浮窗正在运行</string>
-    <string name="notification_text">点击返回应用</string>
+    <!-- Foreground Service Notification -->
+    <string name="notification_channel_name">Overlay Window Service</string>
+    <string name="notification_channel_description">Keeps the overlay window service running in the background</string>
+    <string name="notification_title">Mamu Overlay is running</string>
+    <string name="notification_text">Tap to return to application</string>
 
-    <!-- 主界面 -->
+    <!-- Main Interface / Dashboard -->
     <string name="home_title">Mamu</string>
-    <string name="home_refresh">刷新</string>
-    <string name="home_driver_status_title">驱动状态</string>
-    <string name="home_driver_loaded">已加载</string>
-    <string name="home_driver_not_loaded">未加载</string>
-    <string name="home_driver_error">错误</string>
-    <string name="home_driver_unknown">未知</string>
-    <string name="home_driver_bound_process">绑定进程</string>
+    <string name="home_refresh">Refresh</string>
+    <string name="home_driver_status_title">Driver Status</string>
+    <string name="home_driver_loaded">Loaded</string>
+    <string name="home_driver_not_loaded">Not Loaded</string>
+    <string name="home_driver_error">Error</string>
+    <string name="home_driver_unknown">Unknown</string>
+    <string name="home_driver_bound_process">Bound Process</string>
     <string name="home_driver_bound_process_value">PID: %d</string>
-    <string name="home_driver_not_bound">未绑定</string>
-    <string name="home_driver_error_message">错误信息</string>
-    <string name="home_root_status_title">Root权限</string>
-    <string name="home_root_granted">已获取</string>
-    <string name="home_root_not_granted">未获取</string>
-    <string name="home_selinux_status_title">SELinux状态</string>
-    <string name="home_selinux_enforcing">强制模式</string>
-    <string name="home_selinux_permissive">宽容模式</string>
-    <string name="home_selinux_disabled">已禁用</string>
-    <string name="home_selinux_unknown">未知</string>
-    <string name="home_selinux_mode">模式</string>
-    <string name="home_system_info_title">系统信息</string>
-    <string name="home_device_model">设备型号</string>
-    <string name="home_device_manufacturer">设备制造商</string>
-    <string name="home_device_brand">设备品牌</string>
-    <string name="home_android_version">Android版本</string>
-    <string name="home_sdk_version">SDK版本</string>
-    <string name="home_kernel_version">内核版本</string>
-    <string name="home_cpu_abi">CPU架构</string>
-    <string name="home_supported_abis">支持的ABI</string>
-    <string name="home_error_title">错误</string>
+    <string name="home_driver_not_bound">Not Bound</string>
+    <string name="home_driver_error_message">Error Log</string>
+    <string name="home_root_status_title">Root Access</string>
+    <string name="home_root_granted">Granted</string>
+    <string name="home_root_not_granted">Not Granted</string>
+    <string name="home_selinux_status_title">SELinux Status</string>
+    <string name="home_selinux_enforcing">Enforcing</string>
+    <string name="home_selinux_permissive">Permissive</string>
+    <string name="home_selinux_disabled">Disabled</string>
+    <string name="home_selinux_unknown">Unknown</string>
+    <string name="home_selinux_mode">Mode</string>
+    <string name="home_system_info_title">System Information</string>
+    <string name="home_device_model">Device Model</string>
+    <string name="home_device_manufacturer">Manufacturer</string>
+    <string name="home_device_brand">Brand</string>
+    <string name="home_android_version">Android Version</string>
+    <string name="home_sdk_version">SDK Version</string>
+    <string name="home_kernel_version">Kernel Version</string>
+    <string name="home_cpu_abi">CPU Architecture</string>
+    <string name="home_supported_abis">Supported ABIs</string>
+    <string name="home_error_title">Error</string>
 
-    <!-- 搜索进度对话框 -->
-    <string name="searching">搜索中...</string>
+    <!-- Search Progress Dialog -->
+    <string name="searching">Searching...</string>
     <string name="progress_zero">0%</string>
     <string name="count_zero">0</string>
-    <string name="regions_searched">已搜索区域:</string>
-    <string name="address_searched">已搜索地址:</string>
-    <string name="results_found">找到结果:</string>
-    <string name="hide">隐藏</string>
+    <string name="regions_searched">Regions Searched:</string>
+    <string name="address_searched">Addresses Searched:</string>
+    <string name="results_found">Results Found:</string>
+    <string name="hide">Hide</string>
 
-    <!-- 主题名称 -->
-    <string name="theme_monochrome">黑白</string>
-    <string name="theme_monochrome_desc">极简现代</string>
-    <string name="theme_tech">霓虹科技</string>
-    <string name="theme_tech_desc">炫酷霓虹科技风</string>
-    <string name="theme_cyan">青色</string>
-    <string name="theme_cyan_desc">科技感</string>
-    <string name="theme_blue">蓝色</string>
-    <string name="theme_blue_desc">经典专业</string>
-    <string name="theme_green">绿色</string>
-    <string name="theme_green_desc">自然清新</string>
-    <string name="theme_orange">橙色</string>
-    <string name="theme_orange_desc">活力热情</string>
-    <string name="theme_red">红色</string>
-    <string name="theme_red_desc">动感激情</string>
-    <string name="theme_purple">紫色</string>
-    <string name="theme_purple_desc">优雅神秘</string>
-    <string name="theme_pink">粉色</string>
-    <string name="theme_pink_desc">柔和温暖</string>
-    <string name="theme_amber">琥珀</string>
-    <string name="theme_amber_desc">温暖复古</string>
-    <string name="theme_indigo">靛蓝</string>
-    <string name="theme_indigo_desc">深邃沉稳</string>
+    <!-- Theme Selection -->
+    <string name="theme_monochrome">Monochrome</string>
+    <string name="theme_monochrome_desc">Minimalist &amp; Modern</string>
+    <string name="theme_tech">Neon Tech</string>
+    <string name="theme_tech_desc">Cyberpunk Neon Style</string>
+    <string name="theme_cyan">Cyan</string>
+    <string name="theme_cyan_desc">High-Tech Feel</string>
+    <string name="theme_blue">Blue</string>
+    <string name="theme_blue_desc">Classic &amp; Professional</string>
+    <string name="theme_green">Green</string>
+    <string name="theme_green_desc">Natural &amp; Fresh</string>
+    <string name="theme_orange">Orange</string>
+    <string name="theme_orange_desc">Vibrant &amp; Energetic</string>
+    <string name="theme_red">Red</string>
+    <string name="theme_red_desc">Dynamic &amp; Passionate</string>
+    <string name="theme_purple">Purple</string>
+    <string name="theme_purple_desc">Elegant &amp; Mysterious</string>
+    <string name="theme_pink">Pink</string>
+    <string name="theme_pink_desc">Soft &amp; Warm</string>
+    <string name="theme_amber">Amber</string>
+    <string name="theme_amber_desc">Warm &amp; Vintage</string>
+    <string name="theme_indigo">Indigo</string>
+    <string name="theme_indigo_desc">Deep &amp; Composed</string>
 
-    <!-- 导出/导入对话框 -->
-    <string name="dialog_export_title">导出地址</string>
-    <string name="dialog_import_title">导入地址</string>
-    <string name="label_file_name">文件名：</string>
-    <string name="label_save_path">路径：</string>
-    <string name="hint_file_name">输入文件名</string>
-    <string name="export_count_hint">将导出 %d 个地址</string>
-    <string name="button_export">导出</string>
-    <string name="button_import">导入</string>
-    <string name="export_min_selection_warning">请至少选择 2 个地址</string>
-    <string name="label_export_selected">导出选择项</string>
-    <string name="label_import_selected">导入选择项</string>
-    <string name="import_select_file_hint">选择要导入的文件</string>
-    <string name="import_no_files">没有找到可导入的文件</string>
-    <string name="import_success">成功导入 %d 个地址</string>
-    <string name="import_failed">导入失败</string>
-    <string name="import_pid_mismatch_warning">警告：文件中的PID(%1$d)与当前进程PID(%2$d)不匹配</string>
+    <!-- Export/Import Dialog -->
+    <string name="dialog_export_title">Export Addresses</string>
+    <string name="dialog_import_title">Import Addresses</string>
+    <string name="label_file_name">File Name: </string>
+    <string name="label_save_path">Path: </string>
+    <string name="hint_file_name">Enter file name</string>
+    <string name="export_count_hint">%d addresses will be exported</string>
+    <string name="button_export">Export</string>
+    <string name="button_import">Import</string>
+    <string name="export_min_selection_warning">Please select at least 2 addresses</string>
+    <string name="label_export_selected">Export Selected Items</string>
+    <string name="label_import_selected">Import Selected Items</string>
+    <string name="import_select_file_hint">Select file to import</string>
+    <string name="import_no_files">No importable files found</string>
+    <string name="import_success">Successfully imported %d addresses</string>
+    <string name="import_failed">Import failed</string>
+    <string name="import_pid_mismatch_warning">Warning: File PID (%1$d) does not match current process PID (%2$d)</string>
 
-    <!-- 搜索历史 -->
-    <string name="search_history_title">搜索历史</string>
-    <string name="search_history_empty">暂无搜索历史</string>
-    <string name="search_history_clear_all">清空全部</string>
-    <string name="search_history_cleared">搜索历史已清空</string>
-    <string name="search_history_deleted">已删除</string>
-    <string name="button_delete">删除</string>
-    <string name="close">关闭</string>
+    <!-- Search History -->
+    <string name="search_history_title">Search History</string>
+    <string name="search_history_empty">No search history logs available</string>
+    <string name="search_history_clear_all">Clear All</string>
+    <string name="search_history_cleared">Search history cleared</string>
+    <string name="search_history_deleted">Deleted</string>
+    <string name="button_delete">Delete</string>
+    <string name="close">Close</string>
 
 </resources>
